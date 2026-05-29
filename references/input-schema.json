@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SinoUnited Health 2026 policy template input",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "file_name": {"type": "string"},
+        "file_category": {"type": "string"},
+        "department": {"type": "string"},
+        "document_number": {"type": "string"},
+        "version": {"type": "string"},
+        "writer": {"type": "string"},
+        "reviewer": {"type": "string"},
+        "revision_date": {"type": "string"},
+        "review_date": {"type": "string"},
+        "effective_date": {"type": "string"},
+        "document_nature": {"type": "string", "enum": ["新增", "修订", "废止", "回顾", "新增，修订", "修订，回顾"]},
+        "page_count": {"type": "string"}
+      }
+    },
+    "sections": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "purpose": {"type": ["string", "array", "object"]},
+        "scope": {"type": ["string", "array", "object"]},
+        "definitions": {"type": ["string", "array", "object"]},
+        "responsibilities": {"type": ["string", "array", "object"]},
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "text"],
+            "properties": {
+              "level": {"type": "integer", "enum": [1, 2]},
+              "text": {"type": "string"}
+            }
+          }
+        },
+        "process": {"type": ["string", "array", "object"]},
+        "quality_management": {"type": ["string", "array", "object"]},
+        "risk_management": {"type": ["string", "array", "object"]},
+        "attachments": {"type": ["string", "array", "object"]},
+        "references": {"type": ["string", "array", "object"]}
+      }
+    },
+    "resources": {
+      "type": ["object", "array"],
+      "description": "Fixed rows for 人力资源、财务预算、设施空间、资材物料、科技信息."
+    },
+    "training_plan": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "properties": {
+          "object": {"type": "string", "enum": ["全员", "岗位"]},
+          "cycles": {
+            "type": ["string", "array"],
+            "items": {"type": "string", "enum": ["1次或岗前", "1月", "1季度", "1年"]}
+          },
+          "methods": {
+            "type": ["string", "array"],
+            "items": {"type": "string", "enum": ["自学", "在线学习", "授课", "开会"]}
+          },
+          "remarks": {"type": "string"}
+        }
+      }
+    },
+    "revision_history": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": {"type": "string"},
+          "summary": {"type": "string"},
+          "date": {"type": "string"}
+        }
+      }
+    }
+  }
+}

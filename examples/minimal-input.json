@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "file_name": "文件名",
+    "file_category": "",
+    "department": "",
+    "document_number": "",
+    "version": "",
+    "writer": "",
+    "reviewer": "",
+    "revision_date": "",
+    "review_date": "",
+    "effective_date": "",
+    "document_nature": "修订",
+    "page_count": ""
+  },
+  "sections": {
+    "purpose": "",
+    "scope": "",
+    "definitions": "",
+    "responsibilities": "",
+    "content": [
+      {"level": 1, "text": ""},
+      {"level": 2, "text": ""}
+    ],
+    "process": "",
+    "quality_management": "",
+    "risk_management": "",
+    "attachments": "",
+    "references": ""
+  },
+  "resources": {
+    "人力资源": {"quantity": "", "description": ""},
+    "财务预算": {"quantity": "", "description": ""},
+    "设施空间": {"quantity": "", "description": ""},
+    "资材物料": {"quantity": "", "description": ""},
+    "科技信息": {"quantity": "", "description": ""}
+  },
+  "training_plan": [
+    {"object": "全员", "cycles": ["1次或岗前"], "methods": ["自学"], "remarks": ""},
+    {"object": "岗位", "cycles": ["1次或岗前"], "methods": ["授课"], "remarks": ""}
+  ],
+  "revision_history": [
+    {"version": "", "summary": "", "date": ""}
+  ]
+}

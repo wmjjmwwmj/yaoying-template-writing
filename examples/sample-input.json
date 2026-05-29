@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "file_name": "门诊药品管理制度",
+    "file_category": "制度文件",
+    "department": "门诊部",
+    "document_number": "SUH-OPD-001",
+    "version": "V1.0",
+    "writer": "门诊部",
+    "reviewer": "质量管理部",
+    "revision_date": "2026 年 5 月 28 日",
+    "review_date": "2026 年 5 月 28 日",
+    "effective_date": "2026 年 6 月 1 日",
+    "document_nature": "新增",
+    "page_count": "3"
+  },
+  "sections": {
+    "purpose": "规范门诊药品申领、储存、使用和盘点流程，确保药品使用安全、记录完整、责任清晰。",
+    "scope": "适用于门诊区域药品的日常管理、交接、盘点及异常上报。",
+    "definitions": ["门诊药品：用于门诊诊疗服务的药品。", "异常药品：过期、破损、标签不清或账物不符的药品。"],
+    "responsibilities": ["门诊护士负责日常保管与记录。", "药房负责药品发放、退回审核及专业指导。", "质量管理部负责制度执行抽查。"],
+    "content": [
+      {"level": 1, "text": "药品申领应按批准清单执行，临时需求需经部门负责人确认。"},
+      {"level": 2, "text": "申领记录应包含品名、规格、数量、申领人、发放人和日期。"},
+      {"level": 1, "text": "药品应按说明书要求储存，并每日检查有效期和外观。"},
+      {"level": 1, "text": "发现异常药品时应立即隔离、标识并上报。"}
+    ],
+    "process": "申领、验收、储存、使用、盘点、异常处理按部门标准流程执行。",
+    "quality_management": "每季度抽查药品记录和实物一致性，发现问题形成整改记录。",
+    "risk_management": "重点风险包括过期药品误用、记录缺失和交接不清；通过双人核对和定期盘点控制。",
+    "attachments": "门诊药品盘点表；异常药品处理记录表。",
+    "references": "《医疗机构药事管理规定》；医院药品管理相关制度。"
+  },
+  "resources": {
+    "人力资源": {"quantity": "门诊护士、药师", "description": "执行日常管理、发放审核和异常处理"},
+    "财务预算": {"quantity": "无新增", "description": "使用既有部门预算"},
+    "设施空间": {"quantity": "药品柜", "description": "用于分区储存和标识管理"},
+    "资材物料": {"quantity": "标签、封条", "description": "用于异常隔离和记录归档"},
+    "科技信息": {"quantity": "信息系统", "description": "用于领用记录和库存查询"}
+  },
+  "training_plan": [
+    {"object": "全员", "cycles": ["1次或岗前", "1年"], "methods": ["自学", "在线学习"], "remarks": "完成后由部门留存记录。"},
+    {"object": "岗位", "cycles": ["1次或岗前", "1季度"], "methods": ["授课", "开会"], "remarks": "涉及药品管理岗位必须参加。"}
+  ],
+  "revision_history": [
+    {"version": "V1.0", "summary": "新增门诊药品管理制度", "date": "2026 年 5 月 28 日"}
+  ]
+}
