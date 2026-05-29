@@ -1,0 +1,7 @@
+interface:
+  display_name: "yaoying-template-writing"
+  short_description: "严格按曜影制度模板生成固定版式DOCX"
+  default_prompt: "Use $yaoying-template-writing to draft a policy DOCX by filling structured JSON into the bundled template without changing layout."
+
+policy:
+  allow_implicit_invocation: true

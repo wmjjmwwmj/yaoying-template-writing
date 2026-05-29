@@ -9,3 +9,4 @@ python3 scripts/write_from_template.py examples/minimal-input.json output.docx
 ```
 
 See [SKILL.md](SKILL.md) for the required workflow and content rules.
+
